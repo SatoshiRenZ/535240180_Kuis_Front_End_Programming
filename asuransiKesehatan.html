@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuransi Kesehatan | RenZ Life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-navbar">
+            <a href="home.html" class="logo">RenZ</a>
+            <div class="nav-right">
+                <a href="#product">Product</a>
+                <nav id="nav-links"></nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-pembelian-container">
+            <h2>Formulir Pembelian Asuransi Kesehatan</h2>
+            <p>Silakan lengkapi data diri Anda.</p>
+            <form id="formKesehatan" novalidate>
+                <div class="form-grid">
+                    <div class="form-group"><label for="kesehatan-nama">Nama Lengkap (sesuai KTP)</label><input type="text" id="kesehatan-nama" required></div>
+                    <div class="form-group"><label for="kesehatan-lahir">Tanggal Lahir</label><input type="date" id="kesehatan-lahir" required></div>
+                    <div class="form-group"><label for="kesehatan-pekerjaan">Pekerjaan</label><input type="text" id="kesehatan-pekerjaan" required></div>
+                    <div class="form-group"><label for="kesehatan-rokok">Merokok?</label><select id="kesehatan-rokok" required><option value="">Pilih</option><option value="1">Ya</option><option value="0">Tidak</option></select></div>
+                    <div class="form-group"><label for="kesehatan-hipertensi">Punya Riwayat Hipertensi?</label><select id="kesehatan-hipertensi" required><option value="">Pilih</option><option value="1">Ya</option><option value="0">Tidak</option></select></div>
+                    <div class="form-group"><label for="kesehatan-diabetes">Punya Riwayat Diabetes?</label><select id="kesehatan-diabetes" required><option value="">Pilih</option><option value="1">Ya</option><option value="0">Tidak</option></select></div>
+                </div>
+                <button type="submit" class="cta-button">Hitung Premi</button>
+            </form>
+            <div id="hasilPremi" class="premium-result">
+                <h3>Estimasi Premi Tahunan Anda:</h3>
+                <p id="hargaPremi">-</p>
+                <button id="checkoutBtn" class="cta-button" style="display: none;">Lanjut ke Checkout</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-logo">RenZ</h2>
+            <p>Contact Us:</p>
+            <ul class="contact-list">
+                <li><a href="#" onclick="return false"><i class="fab fa-whatsapp"></i>Whatsapp: 0812-3456-7890</a></li>
+                <li><a href="#" onclick="return false"><i class="far fa-envelope"></i>Gmail: RenZLife@gmail.com</a></li>
+                <li><a href="#" onclick="return false"><i class="fab fa-instagram"></i>Instagram: @RenZLife</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Marketplace RenZ. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/pembayaran.js"></script>
+</body>
+</html>

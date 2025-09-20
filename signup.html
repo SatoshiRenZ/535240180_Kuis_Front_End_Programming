@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Akun Online | RenZ Life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-navbar">
+            <a href="home.html" class="logo">RenZ</a>
+            <div class="nav-right">
+                <a href="home.html#product">Product</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Registrasi</h2>
+            <form id="signupForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Nama Anda" required>
+                    <small class="error-message"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon" required>
+                    <small class="error-message"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@gmail.com" required>
+                    <small class="error-message"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Konfirmasi Kata Sandi</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Ulangi kata sandi" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="cta-button">Daftar</button>
+                <div class="auth-switch">
+                    <p>Sudah punya akun? <a href="login.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-logo">RenZ</h2>
+            <p>Contact Us:</p>
+            <ul class="contact-list">
+                <li><a href="#" onclick="return false"><i class="fab fa-whatsapp"></i>Whatsapp: 0812-3456-7890</a></li>
+                <li><a href="#" onclick="return false"><i class="far fa-envelope"></i>Gmail: RenZLife@gmail.com</a></li>
+                <li><a href="#" onclick="return false"><i class="fab fa-instagram"></i>Instagram: @RenZLife</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Marketplace RenZ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
