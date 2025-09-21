@@ -1,10 +1,13 @@
 Kuis Front-End Programming
+
 Nama = Rendy Denny
+
 NIM = 535240180
 
 # RenZ - Marketplace Asuransi
 
 Selamat datang di RenZ, sebuah platform marketplace asuransi berbasis web yang dirancang untuk memudahkan pengguna dalam mencari, membandingkan, dan membeli berbagai produk asuransi. Proyek ini dibangun sebagai Kuis Front-End Programming.
+
 
 ## 📜 Deskripsi
 
